@@ -1,0 +1,23 @@
+.hero {
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		color: var(--dark-blue-color);
+	}
+	&__title {
+		margin-top: 150px;
+		margin-bottom: 0;
+		grid-column: 3 / 10;
+	}
+	&__text {
+		margin-top: 20px;
+		grid-column: 2 / 11;
+		text-align: center;
+		font-size: 22px;
+		line-height: 150%;
+		margin-bottom: 0;
+		&-bold {
+			font-weight: 700;
+		}
+	}
+}
