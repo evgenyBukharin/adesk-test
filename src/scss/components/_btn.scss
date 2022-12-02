@@ -1,0 +1,30 @@
+.btn {
+	&__primary {
+		background: var(--white-color);
+		color: var(--dark-blue-color);
+		box-sizing: border-box;
+		border-radius: 4px;
+		padding: 11px 20px;
+		font-size: 18px;
+		line-height: 100%;
+		border: 1px solid rgba(5, 21, 52, 0.3);
+		&-blue {
+			background: var(--light-blue-color);
+			color: var(--white-color);
+			padding: 12px 20px;
+			border: none;
+		}
+		&-pink {
+			background: var(--pink-color);
+			color: var(--white-color);
+			padding: 12px 20px;
+			border: none;
+		}
+		&-green {
+			background: var(--green-color);
+			color: var(--white-color);
+			padding: 12px 20px;
+			border: none;
+		}
+	}
+}

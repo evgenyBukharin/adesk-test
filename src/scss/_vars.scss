@@ -1,8 +1,6 @@
-// если вы хотите использовать sass-переменные - удалите root
-// colors
 :root {
 	// base
-	--font-family: "Open Sans", sans-serif;
+	--font-family: "Graphik LCG", sans-serif;
 	--content-width: 1140px;
 	--container-offset: 30px;
 	--container-width: calc(
@@ -10,5 +8,10 @@
 	);
 
 	// colors
-	--light-color: #fff;
+	--white-color: #fff;
+	--black-color: #2c3038;
+	--light-blue-color: #0f8ff9;
+	--dark-blue-color: #051534;
+	--pink-color: #f0568e;
+	--green-color: #00c064;
 }

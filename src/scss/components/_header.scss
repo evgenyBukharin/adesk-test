@@ -1,2 +1,20 @@
 .header {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px;
+		padding-top: 20px;
+		padding-bottom: 18px;
+		&-inner {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__logo {
+		width: 104px;
+		height: 24px;
+	}
+	&__btn {
+		margin-right: 10px;
+	}
 }
