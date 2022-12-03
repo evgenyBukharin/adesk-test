@@ -1,14 +1,17 @@
 <header class="header">
 	<div class="header__container">
 		<div class="header__container-inner">
-			<img
-				loading="lazy"
-				src="../img/logo.webp"
-				class="image header__logo"
-				width="104"
-				height="24"
-				alt="Логотип"
-			/>
+			<picture>
+				<source srcset="../img/logo.webp" type="image/webp" />
+				<img
+					loading="lazy"
+					src="../img/logo.png"
+					class="image header__logo"
+					width="104"
+					height="24"
+					alt="Логотип"
+				/>
+			</picture>
 			<nav class="nav" title="Навигационная панель">
 				<ul class="nav__list list-reset">
 					<li class="nav__item">
