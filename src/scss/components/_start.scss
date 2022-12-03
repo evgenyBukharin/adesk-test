@@ -1,0 +1,34 @@
+.start {
+	color: var(--dark-blue-color);
+	&__container {
+		padding-top: 180px;
+		padding-bottom: 200px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+	&__image {
+		min-width: 168px;
+		height: 220px;
+		margin-right: 56px;
+	}
+	&__content {
+		max-width: 706px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 110%;
+		letter-spacing: -0.005em;
+		margin: 0;
+	}
+	&__text {
+		font-size: 20px;
+		line-height: 150%;
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+	&__btn {
+		margin-top: 20px;
+	}
+}

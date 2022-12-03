@@ -3,10 +3,11 @@
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		color: var(--dark-blue-color);
+		padding-top: 150px;
+		padding-bottom: 100px;
 	}
 	&__title {
-		margin-top: 150px;
-		margin-bottom: 0;
+		margin: 0;
 		grid-column: 3 / 10;
 	}
 	&__text {
