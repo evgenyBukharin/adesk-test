@@ -1,0 +1,60 @@
+.consulting {
+	color: var(--dark-blue-color);
+	&__container {
+		background: var(--grey-color);
+		padding-top: 120px;
+		padding-bottom: 120px;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 55px;
+		line-height: 110%;
+		margin: 0;
+		grid-column: 3 / 10;
+		text-align: center;
+		letter-spacing: -2.1px;
+	}
+	&__advantages {
+		margin-top: 50px;
+		grid-column: 4 / 10;
+	}
+	&__item {
+		font-size: 22px;
+		line-height: 150%;
+		display: flex;
+		&:not(:first-child) {
+			margin-top: 50px;
+		}
+	}
+	&__marker {
+		position: relative;
+		min-width: 60px;
+		min-height: 60px;
+		margin-right: 20px;
+
+		&-bg {
+			position: absolute;
+			background: #eaeaea;
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+			filter: blur(7.5px);
+		}
+		&-text {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			font-weight: 500;
+			font-size: 30px;
+			line-height: 130%;
+			color: var(--dark-grey-color);
+		}
+	}
+	&__btn {
+		margin-top: 50px;
+		grid-column: 5 / 8;
+	}
+}

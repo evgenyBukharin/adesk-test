@@ -26,5 +26,11 @@
 			padding: 12px 20px;
 			border: none;
 		}
+		&-darkblue {
+			background: var(--dark-blue-color);
+			color: var(--white-color);
+			padding: 12px 20px;
+			border: none;
+		}
 	}
 }
