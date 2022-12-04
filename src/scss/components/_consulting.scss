@@ -9,9 +9,10 @@
 	}
 	&__title {
 		margin: 0;
-		grid-column: 3 / 10;
+		grid-column: 3 / 11;
 		text-align: center;
-		letter-spacing: -2.1px;
+		font-size: 55px;
+		line-height: 110%;
 	}
 	&__advantages {
 		margin-top: 50px;
