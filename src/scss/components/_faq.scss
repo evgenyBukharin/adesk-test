@@ -63,6 +63,7 @@
 	&__btn {
 		border-radius: 0px 12px 12px 12px;
 		transition: background 0.4s ease-in-out;
+		text-align: left;
 		&:hover {
 			background: var(--hover-blue-color);
 		}
