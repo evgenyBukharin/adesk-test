@@ -88,6 +88,12 @@ a {
 	max-width: var(--container-width);
 }
 
+@media (max-width: 375px) {
+	.container {
+		padding: 0 var(--container-offset-mobile);
+	}
+}
+
 .centered {
 	text-align: center;
 }

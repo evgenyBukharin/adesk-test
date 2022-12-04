@@ -107,6 +107,20 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.billing {
+		&__item {
+			grid-column: 5 span;
+			&:nth-last-child(-n + 2) {
+				grid-row: 2;
+			}
+			&:nth-child(odd) {
+				grid-column: 2 / 7;
+			}
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.billing {
 		&__list {
@@ -114,6 +128,12 @@
 		}
 		&__item {
 			grid-column: 6 span;
+			&:nth-last-child(-n + 2) {
+				grid-row: unset;
+			}
+			&:nth-child(odd) {
+				grid-column: 6 span;
+			}
 		}
 	}
 }

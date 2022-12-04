@@ -3,6 +3,7 @@
 	--font-family: "Graphik LCG", sans-serif;
 	--content-width: 1140px;
 	--container-offset: 30px;
+	--container-offset-mobile: 15px;
 	--container-width: calc(
 		var(--content-width) + (var(--container-offset) * 2)
 	);
