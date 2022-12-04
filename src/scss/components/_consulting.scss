@@ -57,6 +57,21 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.consulting {
+		&__title {
+			grid-column: 2 / 12;
+		}
+		&__advantages {
+			grid-column: 3 / 11;
+		}
+		&__btn {
+			grid-column: 4 / 10;
+			padding: 18px 28px;
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.consulting {
 		&__container {
@@ -65,15 +80,12 @@
 		}
 		&__title {
 			font-size: 45px;
-			grid-column: 2 / 12;
 		}
 		&__advantages {
 			grid-column: 2 / 12;
 		}
 		&__btn {
 			margin-top: 50px;
-			grid-column: 4 / 10;
-			padding: 18px 28px;
 		}
 	}
 }
