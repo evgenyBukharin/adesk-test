@@ -30,6 +30,7 @@
 		position: relative;
 		min-width: 60px;
 		min-height: 60px;
+		height: 60px;
 		margin-right: 19px;
 
 		&-bg {
@@ -39,8 +40,6 @@
 			height: 60px;
 			border-radius: 100%;
 			filter: blur(7.5px);
-			top: 50%;
-			transform: translateY(-50%);
 		}
 		&-text {
 			position: absolute;
@@ -102,6 +101,19 @@
 		}
 		&__btn {
 			grid-column: 3 / 11;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.consulting {
+		&__title {
+			font-weight: 600;
+			font-size: 30px;
+		}
+		&__item {
+			font-size: 18px;
+			line-height: 150%;
 		}
 	}
 }

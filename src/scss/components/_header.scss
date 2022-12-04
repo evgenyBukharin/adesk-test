@@ -18,3 +18,13 @@
 		margin-right: 10px;
 	}
 }
+
+@media (max-width: 425px) {
+	.header {
+		&__container {
+			&-buttons {
+				display: none;
+			}
+		}
+	}
+}

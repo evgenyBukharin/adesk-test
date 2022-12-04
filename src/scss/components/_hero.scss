@@ -27,6 +27,7 @@
 	.hero {
 		&__container {
 			padding-top: 120px;
+			padding-bottom: 50px;
 		}
 		&__title {
 			grid-column: 2 / 12;
@@ -41,8 +42,18 @@
 
 @media (max-width: 425px) {
 	.hero {
+		&__container {
+			padding-top: 100px;
+		}
 		&__title {
 			grid-column: 12 span;
+			font-size: 40px;
+			line-height: 115%;
+		}
+		&__text {
+			font-size: 18px;
+			line-height: 150%;
+			margin-top: 15px;
 		}
 	}
 }
