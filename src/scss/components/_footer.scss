@@ -168,3 +168,41 @@
 		}
 	}
 }
+
+@media (max-width: 425px) {
+	.footer {
+		&__container {
+			row-gap: 40px;
+		}
+		&__social {
+			&-top {
+				display: none;
+			}
+			&-bottom {
+				display: flex;
+				margin-bottom: 50px;
+			}
+		}
+		&__list {
+			grid-column: 12 span;
+			grid-row: auto;
+			padding-bottom: 0;
+		}
+		&__documents {
+			flex-direction: column;
+		}
+		&__doc {
+			&:not(:first-child) {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+		&__info {
+			&-last {
+				padding-top: 0;
+				flex-direction: column-reverse;
+				align-items: flex-start;
+			}
+		}
+	}
+}

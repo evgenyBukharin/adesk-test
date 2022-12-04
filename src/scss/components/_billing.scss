@@ -137,3 +137,25 @@
 		}
 	}
 }
+
+@media (max-width: 536px) {
+	.billing {
+		&__item {
+			&:nth-child(even),
+			&:nth-child(odd) {
+				grid-column: 3 / 11;
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.billing {
+		&__item {
+			&:nth-child(even),
+			&:nth-child(odd) {
+				grid-column: 12 span;
+			}
+		}
+	}
+}

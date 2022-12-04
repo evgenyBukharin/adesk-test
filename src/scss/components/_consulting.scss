@@ -39,6 +39,8 @@
 			height: 60px;
 			border-radius: 100%;
 			filter: blur(7.5px);
+			top: 50%;
+			transform: translateY(-50%);
 		}
 		&-text {
 			position: absolute;
@@ -86,6 +88,20 @@
 		}
 		&__btn {
 			margin-top: 50px;
+		}
+	}
+}
+
+@media (max-width: 701px) {
+	.consulting {
+		&__advantages {
+			grid-column: 12 span;
+		}
+		&__title {
+			grid-column: 12 span;
+		}
+		&__btn {
+			grid-column: 3 / 11;
 		}
 	}
 }

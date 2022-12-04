@@ -56,3 +56,11 @@
 		}
 	}
 }
+
+@media (max-width: 425px) {
+	.start {
+		&__btn {
+			grid-column: 2 / 12;
+		}
+	}
+}
