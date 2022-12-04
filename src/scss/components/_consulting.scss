@@ -1,7 +1,7 @@
 .consulting {
 	color: var(--dark-blue-color);
 	&__container {
-		background: var(--grey-color);
+		background: var(--light-grey-color);
 		padding-top: 120px;
 		padding-bottom: 120px;
 		display: grid;
@@ -30,7 +30,7 @@
 		position: relative;
 		min-width: 60px;
 		min-height: 60px;
-		margin-right: 20px;
+		margin-right: 19px;
 
 		&-bg {
 			position: absolute;
@@ -54,5 +54,26 @@
 	&__btn {
 		margin-top: 50px;
 		grid-column: 5 / 8;
+	}
+}
+
+@media (max-width: 768px) {
+	.consulting {
+		&__container {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+		&__title {
+			font-size: 45px;
+			grid-column: 2 / 12;
+		}
+		&__advantages {
+			grid-column: 2 / 12;
+		}
+		&__btn {
+			margin-top: 50px;
+			grid-column: 4 / 10;
+			padding: 18px 28px;
+		}
 	}
 }

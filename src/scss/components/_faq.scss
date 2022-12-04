@@ -74,12 +74,23 @@
 	}
 	&__answer {
 		border-radius: 12px 0px 12px 12px;
-		background: var(--grey-color);
+		background: var(--light-grey-color);
 		padding: 10px 20px;
 		font-size: 20px;
 		line-height: 150%;
 	}
 	&__link {
 		color: var(--light-blue-color);
+	}
+}
+
+@media (max-width: 768px) {
+	.faq {
+		&__container {
+			padding-top: 120px;
+		}
+		&__content {
+			grid-column: 12 span;
+		}
 	}
 }

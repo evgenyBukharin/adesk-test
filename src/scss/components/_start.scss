@@ -32,3 +32,27 @@
 		margin-top: 20px;
 	}
 }
+
+@media (max-width: 768px) {
+	.start {
+		&__container {
+			padding-top: 100px;
+			padding-bottom: 120px;
+			flex-wrap: wrap;
+		}
+		&__image {
+			margin-right: 0;
+			margin-bottom: 37px;
+		}
+		&__title {
+			text-align: center;
+		}
+		&__text {
+			text-align: center;
+		}
+		&__btn {
+			margin-left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

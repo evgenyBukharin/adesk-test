@@ -17,7 +17,7 @@
 			background-color: var(--light-green-color);
 		}
 		&-grey {
-			background-color: var(--grey-color);
+			background-color: var(--light-grey-color);
 		}
 		&-blue {
 			background-color: var(--super-light-blue-color);
@@ -104,5 +104,16 @@
 	&__btn {
 		width: 100%;
 		margin-top: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.billing {
+		&__list {
+			gap: 20px;
+		}
+		&__item {
+			grid-column: 6 span;
+		}
 	}
 }

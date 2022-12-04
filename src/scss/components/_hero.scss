@@ -8,7 +8,7 @@
 	}
 	&__title {
 		margin: 0;
-		grid-column: 3 / 10;
+		grid-column: 3 / 11;
 	}
 	&__text {
 		margin-top: 20px;
@@ -19,6 +19,22 @@
 		margin-bottom: 0;
 		&-bold {
 			font-weight: 700;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		&__container {
+			padding-top: 120px;
+		}
+		&__title {
+			grid-column: 2 / 12;
+			font-size: 55px;
+			line-height: 110%;
+		}
+		&__text {
+			grid-column: 12 span;
 		}
 	}
 }
