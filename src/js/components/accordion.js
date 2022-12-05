@@ -5,14 +5,11 @@ accordions.forEach((el) => {
 	el.addEventListener("click", (e) => {
 		const self = e.currentTarget;
 
-		if (
-			currentOpenedAccordion !== null &&
-			currentOpenedAccordion !== self
-		) {
-			currentOpenedAccordion.classList.toggle("faq__accordion-opened");
-			currentOpenedAccordion.querySelector(
-				".faq__content"
-			).style.maxHeight = null;
+		if (currentOpenedAccordion !== self) {
+			accordions.forEach((el) => {
+				el.classList.remove("faq__accordion-opened");
+				el.querySelector(".faq__content").style.maxHeight = null;
+			});
 		}
 
 		const controlBtn = self.querySelector(".faq__btn");
@@ -33,4 +30,5 @@ accordions.forEach((el) => {
 	});
 });
 
+currentOpenedAccordion = accordions[0];
 accordions[0].click();
