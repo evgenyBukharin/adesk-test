@@ -1,0 +1,31 @@
+.burger {
+	@include burger;
+	--burger-height: 14px;
+	--burger-width: 20px;
+	z-index: 1000;
+	&__line {
+		background: var(--dark-blue-color);
+		border-radius: 30px;
+	}
+	&::before,
+	&::after {
+		background: var(--dark-blue-color);
+		border-radius: 30px;
+	}
+	&--active {
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: var(--burger-line-height);
+			transition: top 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		}
+		& .burger__line {
+			transform: scale(0);
+			transition: transform 0s ease-in-out;
+		}
+	}
+}

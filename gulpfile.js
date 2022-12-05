@@ -384,8 +384,7 @@ exports.build = series(
 	resources,
 	images,
 	webpImages,
-	svgSprites,
-	htmlMinify
+	svgSprites
 );
 
 exports.cache = series(cache, rewrite);
